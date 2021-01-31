@@ -13,7 +13,8 @@ const ClickOutside = () => {
    return (
       <Strip ref={ref} className="is-info">
          <Strip.Text>
-            You clicked outside <span className="tag is-black mx-2">{count}</span> times
+            <span className="mr-2">You clicked outside</span>
+            <span className="tag is-black mr-2">{count}</span> times
          </Strip.Text>
          <Strip.Tag text="useClickOutside" className="is-info" />
       </Strip>

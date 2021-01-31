@@ -10,8 +10,8 @@ const ElementDimensionsOnResize = () => {
    return (
       <Strip ref={elRef} className="is-warning">
          <Strip.Text>
-            This element's dimensions are
-            <span className="tag is-black mx-3">
+            <span className="mr-3">This element's dimensions are</span>
+            <span className="tag is-black">
                {Math.round(elDimensions.width)} x {Math.round(elDimensions.height)}
             </span>
          </Strip.Text>

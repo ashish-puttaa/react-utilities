@@ -1,0 +1,18 @@
+.strip-wrapper {
+   @media only screen and (max-width: 600px) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+   }
+}
+
+.strip-text {
+}
+
+.strip-tag {
+   margin-left: auto;
+
+   @media only screen and (max-width: 600px) {
+      margin-left: unset;
+      margin-bottom: 10px;
+   }
+}

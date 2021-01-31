@@ -7,8 +7,8 @@ const WindowDimensions = () => {
    return (
       <Strip className="is-danger">
          <Strip.Text>
-            Your window size is
-            <span className="tag is-black mx-3" style={{ marginLeft: 'auto' }}>
+            <span className="mr-3">Your window size is</span>
+            <span className="tag is-black" style={{ marginLeft: 'auto' }}>
                {dimensions.width} x {dimensions.height}
             </span>
          </Strip.Text>
