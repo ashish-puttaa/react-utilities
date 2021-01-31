@@ -1,17 +1,19 @@
 import { useWindowDimensions } from '../../hooks/useWindowDimensions';
+import Strip from '../strip';
 
 const WindowDimensions = () => {
    const dimensions = useWindowDimensions();
 
    return (
-      <div className="notification is-danger">
-         <p className="subtitle">
+      <Strip className="is-danger">
+         <Strip.Text>
             Your window size is
-            <span className="tag is-black mx-3">
+            <span className="tag is-black mx-3" style={{ marginLeft: 'auto' }}>
                {dimensions.width} x {dimensions.height}
             </span>
-         </p>
-      </div>
+         </Strip.Text>
+         <Strip.Tag text="useWindowDimensions" className="is-danger" />
+      </Strip>
    );
 };
 

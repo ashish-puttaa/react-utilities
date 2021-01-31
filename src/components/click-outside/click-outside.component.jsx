@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 
+import Strip from '../strip';
 import { useClickOutside } from '../../hooks/useClickOutside';
 
 const ClickOutside = () => {
@@ -10,11 +11,12 @@ const ClickOutside = () => {
    useClickOutside(ref, onClickOutside);
 
    return (
-      <div ref={ref} className="notification is-info">
-         <p className="subtitle">
+      <Strip ref={ref} className="is-info">
+         <Strip.Text>
             You clicked outside <span className="tag is-black mx-2">{count}</span> times
-         </p>
-      </div>
+         </Strip.Text>
+         <Strip.Tag text="useClickOutside" className="is-info" />
+      </Strip>
    );
 };
 
