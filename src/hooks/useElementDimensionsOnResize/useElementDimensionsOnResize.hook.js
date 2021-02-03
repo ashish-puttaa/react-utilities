@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useLayoutEffect } from 'react';
 
 export const useElementDimensionsOnResize = (ref) => {
    const [panelDimensions, setPanelDimensions] = useState({});
@@ -8,7 +8,7 @@ export const useElementDimensionsOnResize = (ref) => {
       setPanelDimensions(dimensions);
    };
 
-   useEffect(() => {
+   useLayoutEffect(() => {
       updateDimensions(ref.current);
 
       const handleResize = () => updateDimensions(ref.current);
